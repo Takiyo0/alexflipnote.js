@@ -21,7 +21,7 @@ class AlexClient {
   constructor(key) {
     this.image = {};
     this.others = {};
-    let baseURL = 'https://api.alexflipnote.dev';
+    let baseURL = 'https://alex.chilledchino.live';
     Object.keys(endpoints.image).forEach(async (endpoint) => {
       this.image[endpoint] = async function (queryParams = '') {
           if(endpoint.includes("coffee")){
